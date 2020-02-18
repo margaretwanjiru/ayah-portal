@@ -1,0 +1,49 @@
+#color{
+    background-color: rgb(223, 69, 176);
+    padding: 10px;
+ 
+}
+#title{
+    color: white;
+    font-size: 30px;
+}
+#me{
+    color: white;
+}
+
+*{
+    font-family: 'Sriracha', cursive;
+}
+h1{
+    color:white;
+    margin-left: 9%;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 90px;
+
+}
+h2{
+    color:white;
+    margin-left: 9%;
+    margin-top: 2%;
+    font-size: 30px;
+    
+
+}
+
+h3{
+    color:rgb(223, 69, 176);
+    margin-left: 18%;
+    margin-top: 2%;
+    font-size: 20px;
+
+}
+span{
+    font-size: 30px;
+    color:white;
+}
+#input{
+    margin-left: 13%;
+    background-color: blueviolet;
+    padding: 1px solid rgb(223, 69, 176);
+}
