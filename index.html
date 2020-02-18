@@ -40,8 +40,65 @@
         <li><a id="me" href="#">HIRE</a></li>
       </ul>
       <ul  class="nav navbar-nav navbar-right">
-        <li><a id="me" href="#"><span id="me" class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a id="me"  href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li ><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto; id="me" href="#"><span id="me" class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/#####*">
+              <div class="container">
+                <h5>Sign Up</h5>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>First name</b></label>
+                <input type="text" placeholder="first name" name="first name" required>
+                
+                <label for="email"><b>Surname</b></label>
+                <input type="text" placeholder="surname" name="surname" required>
+                
+                <label for="email"><b>Email or Mobile number</b></label>
+                <input type="text" placeholder="Enter email or  mobile number" name="email/ mobile number" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        <li ><a onclick="document.getElementById('login').style.display='block'" style="width:auto;"id="me"  href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+        <div id="login" class="modal">
+          <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <form class="modal-content" action="/######***">
+            <div class="container">
+              <h5>Login</h5>
+              <hr>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <label for="psw-repeat"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+                <button type="submit" class="loginbtn">login</button>
+            </div>
+
+          </form>
+        </div>
       </ul>
     </div>
   </div>
@@ -54,6 +111,16 @@
     <br>
     <br>
     <input type="button" class="btn btn-info" id ="input" value="Nannies">
-    <input type="submit" class="btn btn-info" id = "input" value="Households"> 
+    <input type="submit" class="btn btn-info" id = "input" value="Families"> 
+
+<script>
+    var modal = document.getElementById('id01');
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
 </body>
 </html>
